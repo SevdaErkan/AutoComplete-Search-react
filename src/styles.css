@@ -11,15 +11,7 @@
    border-radius: 10px;
    padding-top: 50px;
 }
-.search {
-   padding: auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
 
-   
-}
 .search p {
    width: 50%;
    font-size: 25px;
