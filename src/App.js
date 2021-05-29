@@ -74,6 +74,7 @@ class App extends Component {
                           </li>
                        ))
                      : ""}
+                </ul>
             </div>
          </div>
       );
