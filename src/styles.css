@@ -11,7 +11,9 @@
    border-radius: 10px;
    padding-top: 50px;
 }
-
+.search{
+   padding:0 50px;
+}
 .search p {
    width: 50%;
    font-size: 25px;
