@@ -46,6 +46,9 @@ class App extends Component {
          this.setState({ placeholder: "" });
       }
    };
+    clickHandler = (text) => {
+      this.setState({ input: text, showText: [] });
+   };
    render = () => {
       const { input, showText, placeholder } = this.state;
       console.log(showText);
@@ -59,11 +62,18 @@ class App extends Component {
                   onChange={this.onChange}
                   placeholder={placeholder}
                />
-               <ul>
+                <ul>
                   {input.length > 0
-                     ? showText.map((text) => <li>{text}</li>)
+                     ? showText.map((text) => (
+                          <li
+                             onClick={() => {
+                                this.clickHandler(text);
+                             }}
+                          >
+                             {text}
+                          </li>
+                       ))
                      : ""}
-               </ul>
             </div>
          </div>
       );
